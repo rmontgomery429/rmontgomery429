@@ -23,6 +23,12 @@
         "options": {
           "full_name": "slack"
         }
+      },
+      "beekeeper-studio": {
+        "version": "4.0.3",
+        "options": {
+          "full_name": "beekeeper-studio"
+        }
       }
     },
     "brew": {
