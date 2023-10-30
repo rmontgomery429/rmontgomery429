@@ -1,0 +1,41 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask-fonts": {
+        "revision": "8c3a55acc0087e53b09c551c16134da29b7e2432"
+      }
+    },
+    "cask": {
+      "visual-studio-code": {
+        "version": "1.83.1",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "font-ibm-plex": {
+        "version": "6.3.0",
+        "options": {
+          "full_name": "font-ibm-plex"
+        }
+      },
+      "slack": {
+        "version": "4.35.121",
+        "options": {
+          "full_name": "slack"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.1.17",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.0.0.0.1.1694021235",
+        "Xcode": "15.0",
+        "macOS": "14.1"
+      }
+    }
+  }
+}
