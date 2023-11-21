@@ -1,8 +1,9 @@
 tap "homebrew/cask-fonts"
 
-cask "visual-studio-code"
+cask "docker"
 cask "font-ibm-plex"
+cask "pgadmin4"
 cask "slack"
-cask "beekeeper-studio"
+cask "visual-studio-code"
 
 brew "asdf"
