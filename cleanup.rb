@@ -15,3 +15,4 @@ end
 
 cleanup("Desktop")
 cleanup("Downloads")
+cleanup("Documents")
