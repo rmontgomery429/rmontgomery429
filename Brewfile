@@ -8,6 +8,7 @@ cask "visual-studio-code"
 
 brew "asdf"
 brew "mas"
+brew "hcloud"
 
 mas "soulver", id: 1508732804
 mas "xcode", id: 497799835
