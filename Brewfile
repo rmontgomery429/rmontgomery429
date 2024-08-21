@@ -7,8 +7,9 @@ cask "slack"
 cask "visual-studio-code"
 
 brew "asdf"
-brew "mas"
 brew "hcloud"
+brew "mas"
+brew "virtualenv"
 
 mas "soulver", id: 1508732804
 mas "xcode", id: 497799835
