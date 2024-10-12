@@ -13,6 +13,7 @@ brew "mas"
 brew "virtualenv"
 brew "gleam"
 brew "flyctl"
+brew "neovim"
 
 mas "soulver", id: 1508732804
 mas "xcode", id: 497799835
