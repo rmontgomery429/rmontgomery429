@@ -8,6 +8,7 @@ cask "visual-studio-code"
 
 brew "coreutils"
 brew "git"
+brew "gmp"
 brew "asdf"
 
 brew "hcloud"
