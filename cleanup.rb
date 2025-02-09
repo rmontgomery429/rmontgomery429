@@ -24,11 +24,19 @@ def compress_archives!(days_threshold = 30)
   archive_base = File.join(Dir.home, ARCHIVE_FOLDER)
   Dir.glob(File.join(archive_base, "*")).sort.each do |archive|
     folder_name = File.basename(archive)
+
     # Attempt to parse the folder name as a date using the defined format.
     begin
-      archive_date = Date.strptime(folder_name, TODAYS_DATE)
-    rescue ArgumentError
-      puts "Skipping #{archive} (name not in expected date format)"
+      case folder_name
+      when /^(\d{4}-\d{2}-\d{2}).tar.gz$/
+        raise ArgumentError, "Already compressed"
+      when /^(\d{4}-\d{2}-\d{2})$/
+        archive_date = Date.strptime(folder_name, TODAYS_DATE)
+      else
+        raise ArgumentError, "Invalid format"
+      end
+    rescue ArgumentError => e
+      puts "Skipping #{archive}: #{e.message}"
       next
     end
 
