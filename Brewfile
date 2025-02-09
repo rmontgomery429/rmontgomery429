@@ -10,6 +10,7 @@ brew "coreutils"
 brew "git"
 brew "gmp"
 brew "libyaml"
+brew "openssl"
 
 brew "asdf"
 brew "hcloud"
