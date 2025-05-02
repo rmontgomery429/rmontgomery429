@@ -6,7 +6,9 @@ TODAYS_DATE     = "%Y-%m-%d"
 ARCHIVE_FOLDER = "Archives"
 
 def cleanup(folder)
-  source      = Dir.glob(File.join(Dir.home, folder, "**"))
+  # Only include top-level items to preserve nested directory structure and avoid conflicts
+  source_dir  = File.join(Dir.home, folder)
+  source      = Dir.glob(File.join(source_dir, "*"))
   destination = File.join(Dir.home, ARCHIVE_FOLDER, Time.now.strftime(TODAYS_DATE), folder)
 
   FileUtils.mkdir_p destination
