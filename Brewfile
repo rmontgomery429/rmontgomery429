@@ -11,6 +11,7 @@ brew "git"
 brew "gmp"
 brew "libyaml"
 brew "openssl"
+brew "fnm"
 
 brew "asdf"
 brew "hcloud"
